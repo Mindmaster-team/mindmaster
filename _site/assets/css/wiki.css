@@ -1,0 +1,168 @@
+html {
+  /* 由模板控制字体大小 */
+}
+
+body {
+  background-color: #2D2E36;
+  margin: 0;
+  color: #FFFFFF;
+  font-family: HelveticaNeue, Arial, sans-serif; /* 可选，如果模板已有可省略 */
+}
+
+.gif-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.gif-item.active {
+  background-color: #2652DA;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mysidebar > li {
+  color: white;
+  margin-left: 1em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.mysidebar > li > ul > li {
+  color: blue;
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.gallery {
+  margin-left: 2vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.command {
+  color: white;
+}
+
+.explanation {
+  color: white;
+}
+
+li {
+  margin-bottom: 10px;
+  color: Chocolate;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px dashed red;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 10px;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.mysidebar {
+  padding: 5px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 10px;
+  max-width: 90%;
+  text-align: left;
+}
+
+/* 侧栏和内容区的不同颜色、圆角 */
+#sidebar_action, #div_gif {
+  background-color: #FF6F61;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+#sidebar_intent, #div_intent {
+  background-color: #6B5B95;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+#sidebar_value, #div_value {
+  background-color: #88B04B;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+#sidebar_qa, #div_qa {
+  background-color: #F7CAC9;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+/* 顶部悬浮按钮 */
+.floating-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.floating-button:hover {
+  background-color: #0056b3;
+}
+
+/* 回到顶部按钮 */
+#backToTopBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+#backToTopBtn:hover {
+  background-color: #0056b3;
+}
