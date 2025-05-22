@@ -50,6 +50,7 @@ ul {
 }
 
 .command {
+  font-weight: bold;
   color: white;
 }
 
