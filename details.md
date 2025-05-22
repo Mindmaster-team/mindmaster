@@ -1,10 +1,10 @@
 ---
 title: "Details"
-layout: home
+layout: default
 ---
 
 <!-- It is recommended to put this in the template (e.g., _includes/head.html), but direct reference here is also fine -->
-<link rel="stylesheet" href="/assets/css/wiki.css">
+<link rel="stylesheet" href="{{ '/assets/css/wiki.css' | relative_url }}">
 
 <style>
 /* If you only want the floating button style, put it here. Most other styles are recommended to be written in wiki.css. */
@@ -85,4 +85,4 @@ layout: home
   </div>
 </div>
 
-<script src="/assets/js/wiki.js"></script> 
+<script src="{{ '/assets/js/wiki.js' | relative_url }}"></script>
